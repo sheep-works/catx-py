@@ -1,0 +1,9 @@
+/scripts/__pycache__/
+/publish
+/build
+/source/*.*
+/result/*.*
+/keys
+/tests
+main.exe
+*.pdf

@@ -1,0 +1,6 @@
+- google mt support
+- atman/deepl tm & tb support
+- tbx2tsv converter
+- pysimple gui
+- optimize log
+- trados support

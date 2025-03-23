@@ -1,0 +1,40 @@
+# モード
+## 置換用の REPLACE、機械翻訳用の MT、置換＆機械翻訳の ALL から選択
+MODE: REPLACE
+
+# フェーズ
+## Memsourceのワークフロー使用時に
+PHASE: 0
+
+# ボーダー
+## 置換・正規表現による削除後に残った文字数がこの割合より少ない場合、ロック提案を行う
+BORDER: 10
+
+# ロック
+## Trueにしていると、用語・正規表現のみで置換が完了するセグメントを確定しロックする
+## True以外の文字列の場合は確定もロックもしない。
+LOCK: False
+
+# スキップ
+SKIP: 9999
+
+# 正規表現
+EXCLUSION: [0-9A-z×○△()（）%]+
+
+# 用語集設定
+## TBXファイルから読み込む場合はロケールを指定
+TBX_SOURCE: ja
+TBX_TARGET: zh-cn
+
+# 機械翻訳設定
+MT_ENGINE: NONE
+MT_USERNAME: ***
+MT_PASSWORD: ***
+MT_SOURCE: en
+MT_TARGET: zh
+
+# ドメイン
+## Atman機械翻訳のドメインを指定する
+## 指定できるのは medical,　medical-pv,　medical-device,　medical-cmc,　medical-clinical,　medical-nonclinical,　medical-regulation
+## 英語 → 中国語でのみ有効
+MT_DOMAIN: medical-nonclinical
