@@ -1,6 +1,6 @@
 # Memsource XLIFF Version2.4対応型
 
-from xliff import Mxliff
+from scripts.phrase.mxliff import Mxliff
 
 if __name__ == "__main__":
     mxliff = Mxliff()
